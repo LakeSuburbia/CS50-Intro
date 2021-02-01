@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <div class="header">
+          <h1>Sander Mangelschots</h1>
+          <p>Junior Software developer</p>
+        </div>
+
+       <ul class="nav">
+    <li class="nav-item">
+    <a class="nav-link" href="index.html">Home</a>
+      </li>
+  <li class="nav-item">
+    <a class="nav-link" href="SoftwareProjects.html">Software Projects</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="MusicProjects.html">MusicProjects</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Contact.html">Contact</a>
+  </li>
+</ul>
+
+        <div class="row">
+          <div class="column left">
+
+              <h3>HELLO WORLD</h3>
+              <p>I'm Sander and I am learning to code. On this webspace, you can get to know me a little bit.</p>
+
+              <h2>Have a nice day!</h2>
+          </div>
+          <div class="column right">
+                      <iframe src="https://open.spotify.com/embed/playlist/7wtyEsS54M7SvPmzl1koZE" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+        </div>
+    </body>
+    <script>
+        var btnContainer = document.getElementById("nav");
+
+        // Get all buttons with class="btn" inside the container
+        var btns = btnContainer.getElementsByClassName("nav-link");
+
+        // Loop through the buttons and add the active class to the current/clicked button
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+          });
+        }
+    </script>
+</html>

@@ -1,0 +1,33 @@
+.column {
+  float: left;
+}
+
+.left {
+  width: 75%;
+  text-align: center;
+  vertical-align: center;
+}
+
+.right {
+  width: 25%;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+.nav {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+.image{
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
